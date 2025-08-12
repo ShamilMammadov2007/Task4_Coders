@@ -1,0 +1,81 @@
+@media (min-width: 1920px) {
+  .right__side {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .right__side {
+    padding: 0 80px;
+  }
+  .right__side__logo img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .right__side {
+    padding: 0 70px;
+  }
+  .right__side__logo {
+    margin-bottom: 60px;
+  }
+  .right__side__desc h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left__side {
+    display: none;
+  }
+  .right__side {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .right__side__logo {
+    margin-bottom: 50px;
+  }
+  #gmail__btn, #register {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right__side {
+    padding: 0 20px;
+  }
+  .right__side__logo {
+    margin-bottom: 40px;
+  }
+  .right__side__desc h2 {
+    font-size: 20px;
+  }
+  input, #gmail__btn, #register {
+    padding: 12px;
+    height: 45px;
+  }
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .right__side {
+    padding: 0 15px;
+  }
+  .right__side__desc h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+  .right__side__desc p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  #gmail__btn, #register {
+    height: 42px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
