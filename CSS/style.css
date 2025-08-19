@@ -2,132 +2,193 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    /* border: 1px solid red; */
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #191A1C;
-    color: white;
-    padding: 30px;
+    background-color: #f5f5f5;
 }
 
-
-a {
-    color: #6375FF;
-    cursor: pointer;
-}
-
-.login__page {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 40px; */
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.left__side {
-    width: 50%;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.left__side img {
-    width: 100%;
-    object-fit: cover;
-    height: calc(100vh - 60px);
-}
-
-.right__side {
-    padding: 0px 108px;
-}
-
-.right__side__logo {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-.right__side__desc h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 120%;
-    margin-bottom:16px;
-}
-
-.right__side__desc p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-bottom: 24px;
-}
-
-#gmail__btn,
-#register {
+.nav-links {
     display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.2rem;
     cursor: pointer;
-    width: 100%;
-    height: 50px;
-    padding: 16px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    color: white;
-    margin: 20px 0px;
+    font-size: 0.8rem;
 }
 
-hr {
-    margin: 10px 0px;
-}
-
-#gmail__btn {
-    background: var(--Main-Dark_200, #2D2E30);
-}
-
-#register {
-    background: var(--Main-Dark_200, #5367FE);
-
-}
-
-.right__side span {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-input {
-    width: 100%;
-    padding: 16px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color: transparent;
-    color: white;
-    margin: 10px 0px;
-}
-
-.form-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-}
-
-.line {
-    display: flex;
-    align-items: center;
+.header {
     text-align: center;
-    margin: 20px 0;
-
+    padding: 3rem 0;
+    background-color: #007bff;
+    color: white;
 }
 
-.line::before, .line::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid;
+.header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
-.line span {
-  padding: 0 8px;
+.slider-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.slider-btn {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background: #f0f0f0;
+}
+
+.prev-btn {
+    margin-right: 1rem;
+}
+
+.next-btn {
+    margin-left: 1rem;
+}
+
+.product-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 250px;
+  margin: 0 10px;
 }

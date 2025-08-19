@@ -4,53 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/media.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="login__page">
-        <div class="left__side">
-            <img src="images/Left.png" alt="">
+    <nav class="navbar">
+        <div class="logo">Techshop</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </div>
-        <div class="right__side">
-            <div class="right__side__logo">
-                <img src="images/Logo.svg" alt="">
-            </div>
-
-            <div class="right__side__desc">
-                <h2>Login to CHEYNNI</h2>
-                <p>Create and share videos in seconds.</p>
-            </div>
-            <button id="gmail__btn">
-                <img src="images/icon-google.svg" alt="">
-                Continue with Gmail
-            </button>
-            
-            <div class="line">
-                <hr>
-                <span>OR</span>
-            </div>
-
-            <form action="">
-                <div class="form-group">
-                    <input type="text" placeholder="Name" name="" id="">
-                    <input type="text" placeholder="Surname" name="" id="">
-                </div>
-                <input type="email" placeholder="Email" name="" id="">
-                <input type="password" placeholder="Password" name="" id="">
-                <input type="password" placeholder="Confirm Password" name="" id="">
-                <div class="form-group">
-                    <input type="text" placeholder="Referal Code" name="" id="">
-                    <input type="text" placeholder="Promo Code" name="" id="">
-                </div>
-
-                <button id="register">Register</button>
-            </form>
-            <span>Do you have an account <a href="">Login</a></span>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
         </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Welcome to Our Site</h1>
+        <p>Discover amazing items at great prices</p>
+    </header>
+
+    <div class="slider-container">
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider">
+            <div class="slider-track" id="sliderTrack"></div>
+        </div>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
